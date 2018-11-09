@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Brøking bad</h1>
+
+    <div id="brok">
+        <!-- Her skrives telleren -->
+        <span id="teller">
+            <input type="number" name="teller" id="teller" value="2" min=1>
+        </span>
+
+        <span>/</span>
+
+        <!-- Her skrives nevneren -->
+        <span id="nevner">
+            <input type="number" name="nevner" id="nevner" value="3" min=1>
+        </span>
+
+        <span id="desimal"></span>
+    </div>
+
+    <div id="tabell">
+
+        <!-- Sjekkboksene -->
+        <div class="col" id="checkboxes">
+            <label for="sanntid-check">
+                <input type="checkbox" name="sanntid-check" id="sanntid-check" />Sanntid
+            </label>
+            <label for="desimal-check">
+                <input type="checkbox" name="desimal-check" id="desimal-check" />Desimal
+            </label>
+            <label for="prosent-check">
+                <input type="checkbox" name="prosent-check" id="prosent-check" />Prosent
+            </label>
+            <button type="submit" id="submit">Vis brøk</button>
+            <button id="forkort">Forkort</button>
+        </div>
+
+        <!-- Knappene -->
+        <div class="col" id="buttons">
+            <!-- <button id="utvid">Utvid</button> -->
+        </div>
+
+    </div>
+
+    <!-- Her kommer alt av animasjoner -->
+    <canvas></canvas>
+
+    <!-- Her er JavaScript-koden som får all magien til å skje -->
+    <script src="script.js"></script>
+</body>
+
+</html>
